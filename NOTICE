@@ -9,3 +9,4 @@ Cambios respecto a upstream:
 - Dependencias @depay/web3-* sustituidas por @tokelia/web3-*.
 - basesepolia en supported.
 - Token.basesepolia (ABIs por defecto, 1155 y WRAPPED) como el resto de cadenas EVM.
+- Globales UMD de las dependencias @tokelia/web3-* (rollup.globals.js).
