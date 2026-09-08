@@ -1,0 +1,9 @@
+@tokelia/web3-tokens
+=====================
+
+Fork de https://github.com/DePayFi/web3-tokens (tag v11.1.0), (c) DePay,
+licencia MIT (ver LICENSE). Mantenido por Tokelia como parte de tokelia-pay.
+
+Cambios respecto a upstream:
+- Paquete renombrado a @tokelia/web3-tokens; un solo bundle compilado para EVM.
+- Dependencias @depay/web3-* sustituidas por @tokelia/web3-*.

@@ -1,7 +1,7 @@
-import Blockchains from '@depay/web3-blockchains'
+import Blockchains from '@tokelia/web3-blockchains'
 import findProgramAddress from './findProgramAddress'
 import { ethers } from 'ethers'
-import { request } from '@depay/web3-client'
+import { request } from '@tokelia/web3-client'
 
 export default async ({ blockchain, address, account, api })=>{
 

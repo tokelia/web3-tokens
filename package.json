@@ -1,7 +1,7 @@
 {
-  "name": "@depay/web3-tokens",
+  "name": "@tokelia/web3-tokens",
   "moduleName": "Web3Tokens",
-  "version": "11.1.0",
+  "version": "11.1.0-tokelia.1",
   "description": "JavaScript library providing basic functionalities to interact with web3 tokens.",
   "main": "dist/umd/index.js",
   "module": "dist/esm/index.js",
@@ -10,33 +10,32 @@
     "dist"
   ],
   "scripts": {
-    "build": "rm -rf dist && rollup -c rollup.module.config.js && rollup -c rollup.module.evm.config.js && rollup -c rollup.module.svm.config.js",
+    "build": "rimraf dist && rollup -c rollup.module.config.js",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --fix",
     "dev": "rollup -c rollup.dev.config.js -w",
-    "test:units": "yarn build && npx jest --no-cache",
-    "test": "yarn test:units"
+    "test:units": "npm run build && npx jest --no-cache",
+    "test": "npm run test:units"
   },
-  "repository": "git@github.com:DePayFi/web3-tokens.git",
+  "repository": "git@github.com:tokelia/web3-tokens.git",
   "keywords": [
     "token",
     "cryptocurrencies",
     "web3",
     "blockchains"
   ],
-  "author": "depay.com",
+  "author": "Tokelia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DePayFi/web3-tokens/issues"
+    "url": "https://github.com/tokelia/web3-tokens/issues"
   },
-  "homepage": "https://depay.com",
+  "homepage": "https://github.com/tokelia/web3-tokens",
   "private": false,
   "dependencies": {},
   "peerDependencies": {
-    "@depay/solana-web3.js": "^1.98.0",
-    "@depay/web3-blockchains": "^9.7.9",
-    "@depay/web3-client": "^11.0.1",
-    "ethers": "^5.7.1"
+    "ethers": "^5.7.1",
+    "@tokelia/web3-blockchains": "^9.8.13-tokelia.1",
+    "@tokelia/web3-client": "^11.1.10-tokelia.1"
   },
   "engines": {
     "node": ">=16"
@@ -44,11 +43,6 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
-    "@depay/solana-web3.js": "^1.98.0",
-    "@depay/web3-blockchains": "^9.7.9",
-    "@depay/web3-client": "^11.0.1",
-    "@depay/web3-client-evm": "^11.0.1",
-    "@depay/web3-client-svm": "^11.0.1",
     "@depay/web3-mock": "^15.1.1",
     "@peculiar/webcrypto": "^1.4.0",
     "@rollup/plugin-commonjs": "^18.0.0",
@@ -63,6 +57,7 @@
     "eslint-plugin-import": "^2.22.1",
     "ethers": "^5.7.1",
     "fetch-mock": "^9.11.0",
+    "jest": "^28.1.3",
     "jest-environment-jsdom": "^28.1.0",
     "regenerator-runtime": "^0.13.7",
     "rollup": "^2.34.2",
@@ -71,6 +66,12 @@
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-serve": "^1.1.0",
     "tslib": "^2.3.1",
-    "webpack": "^5.73.0"
+    "webpack": "^5.73.0",
+    "@tokelia/web3-blockchains": "^9.8.13-tokelia.1",
+    "@tokelia/web3-client": "^11.1.10-tokelia.1",
+    "rimraf": "^6.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

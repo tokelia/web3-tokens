@@ -1,6 +1,6 @@
 import { METADATA_LAYOUT } from './layouts'
 import { PublicKey, Buffer } from '@depay/solana-web3.js'
-import { request } from '@depay/web3-client'
+import { request } from '@tokelia/web3-client'
 
 const METADATA_ACCOUNT = 'metaqbxxUerdq28cj1RbAWkYQm3ybzjb6a8bt518x1s'
 

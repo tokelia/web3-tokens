@@ -1,18 +1,18 @@
 /*#if _EVM
 
-import { request } from '@depay/web3-client-evm'
+import { request } from '@tokelia/web3-client'
 
 /*#elif _SVM
 
-import { request } from '@depay/web3-client-svm'
+import { request } from '@tokelia/web3-client'
 
 //#else */
 
-import { request } from '@depay/web3-client'
+import { request } from '@tokelia/web3-client'
 
 //#endif
 
-import Blockchains from '@depay/web3-blockchains'
+import Blockchains from '@tokelia/web3-blockchains'
 
 export default async ({ blockchain, address, account, api, id })=>{
   if (address == Blockchains[blockchain].currency.address) {

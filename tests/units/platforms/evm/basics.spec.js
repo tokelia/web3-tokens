@@ -1,7 +1,7 @@
 import fetchMock from 'fetch-mock'
-import Blockchains from '@depay/web3-blockchains'
+import Blockchains from '@tokelia/web3-blockchains'
 import { mock, resetMocks } from '@depay/web3-mock'
-import { resetCache, getProvider } from '@depay/web3-client'
+import { resetCache, getProvider } from '@tokelia/web3-client'
 import { supported } from 'src/blockchains'
 import Token from 'src'
 

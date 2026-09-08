@@ -1,4 +1,4 @@
-import { request } from '@depay/web3-client'
+import { request } from '@tokelia/web3-client'
 import { MINT_LAYOUT } from './layouts'
 
 export default async ({ blockchain, address })=>{

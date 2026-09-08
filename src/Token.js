@@ -48,7 +48,7 @@ import { TOKEN_PROGRAM, ASSOCIATED_TOKEN_PROGRAM } from './platforms/solana/cons
 
 //#endif
 
-import Blockchains from '@depay/web3-blockchains'
+import Blockchains from '@tokelia/web3-blockchains'
 import { ethers } from 'ethers'
 import { supported } from './blockchains'
 
