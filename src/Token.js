@@ -345,6 +345,14 @@ Token.worldchain = {
   WRAPPED: WETH,
 }
 
+Token.basesepolia = {
+  DEFAULT: ERC20,
+  ERC20: ERC20,
+  20: ERC20,
+  1155: ERC1155,
+  WRAPPED: WETH,
+}
+
 /*#elif _SVM
 
 Token.solana = {
@@ -437,6 +445,14 @@ Token.base = {
 }
 
 Token.worldchain = {
+  DEFAULT: ERC20,
+  ERC20: ERC20,
+  20: ERC20,
+  1155: ERC1155,
+  WRAPPED: WETH,
+}
+
+Token.basesepolia = {
   DEFAULT: ERC20,
   ERC20: ERC20,
   20: ERC20,
