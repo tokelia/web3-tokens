@@ -1,12 +1,11 @@
-import { mock, resetMocks } from '@depay/web3-mock'
+import { mock, resetMocks } from '@tokelia/web3-mock'
 import { resetCache, getProvider } from '@tokelia/web3-client'
 import { supported } from 'src/blockchains'
 import Token from 'src'
 
 describe('Token decimals', () => {
 
-  supported.evm.filter((blockchain)=> blockchain !== 'basesepolia' // @depay/web3-mock (Task 7) no soporta basesepolia todavia
-  ).forEach((blockchain)=>{
+  supported.evm.forEach((blockchain)=>{
 
     describe(blockchain, ()=>{
 
